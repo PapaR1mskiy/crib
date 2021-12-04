@@ -1,0 +1,22 @@
+git init
+
+git config --global user.name 'MyUserName'
+git config --global user.email myEmail@gmail.com
+
+git status
+
+git add
+
+git commit -m "Начало..."
+
+------
+
+Регестрация на github
+
+Добавить отдаленный репозиторий
+
+Запушить туда свои файлы
+
+git remote...
+
+git push...
