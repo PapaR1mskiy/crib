@@ -1,0 +1,131 @@
+.btn 
+	border-radius: 12px 
+	min-height: 52px 
+	display: inline-flex 
+	align-items: center 
+	justify-content: center 
+	letter-spacing: .8px 
+	padding: 10px 16px 
+	font-weight: 500 
+	&-primary 
+		background-color: #1971F5 
+	&-light 
+		color: #0D2344 
+		background-color: transparent 
+		border-color: transparent 
+		&:hover 
+			color: #fff 
+			background-color: #1971F5 
+			border-color: #0d6efd 
+
+.logo-img 
+	max-width: 115px 
+	max-height: 26px 
+
+.navbar-fixed 
+	position: fixed 
+	top: 0 
+	left: 0 
+	width: 100% 
+
+.navbar 
+	min-height: 84px 
+	border-radius: 22px 
+	background-color: #fff 
+	border: 1px solid #E6E9EF 
+	margin-top: 32px 
+	padding: 0 24px 
+	& &__btn-login 
+		margin-right: 10px 
+	& &__logo-holder 
+		min-width: 150px 
+	& &__nav 
+		margin-left: 90px 
+	& &__nav-link 
+		color: #64748B 
+		font-weight: 500 
+		letter-spacing: .8px 
+		&:hover 
+			color: #1971F5 
+	& &__btns 
+		text-align: right 
+
+
+@media (max-width: 992px)
+	.navbar 
+		& &__nav 
+			flex-direction: column 
+	.navbar-expand-lg 
+		.navbar-collapse 
+			flex-direction: column 
+	.navbar-collapse 
+		position: absolute 
+		top: 84px 
+		left: 0 
+		background-color: #fff 
+		border: 1px solid #E6E9EF 
+		width: 100% 
+		border-radius: 22px 
+		.navbar-collapse__nav 
+			margin-left: 20px 
+			margin-top: 20px 
+		.navbar-collapse__btns 
+			text-align-last: left 
+			margin: 10px 20px 20px 20px 
+
+
+@media (min-width: 992px)
+	.navbar-expand-lg .navbar-collapse 
+		justify-content: space-between
+
+
+
+.visible-zone 
+	padding-top: 200px 
+	text-align: center 
+	background: rgb(227,237,255) 
+	background: linear-gradient(90deg, rgba(227,237,255,1) 0%, rgba(245,249,255,1) 100%) 
+	padding-bottom: 80px 
+	min-height: 530px 
+	& &__title 
+		color: #000 
+		font-size: 48px 
+		font-weight: 600 
+		letter-spacing: -0.8px 
+		margin-bottom: 30px 
+	& &__under-title 
+		font-weight: 500 
+		font-size: 16px 
+		letter-spacing: 0.8px 
+		color: rgba(13, 35, 68, 0.8) 
+		margin: 35px auto 26px 
+		max-width: 615px 
+		line-height: 1.7 
+	& &__btn 
+		margin-top: 0 
+		min-height: 56px 
+		min-width: 145px 
+
+
+
+.video-presentation 
+	padding: 40px 0 
+	text-align: center 
+	& &__img 
+		cursor: pointer 
+		transition: all .3s 
+		&:hover 
+			box-shadow: 0px 0px 15px 0px rgba($bl, .65) 
+	& &__iframe 
+		display: none 
+	& &__img,
+	& &__iframe 
+		width: 100% 
+		height: 582px 
+		border-radius: 22px 
+		+w1200
+			height: 525px
+		+w992
+			height: 390px
+		+w768
+			height: 290px

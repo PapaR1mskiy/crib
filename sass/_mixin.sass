@@ -1,0 +1,28 @@
+// Responsive breakpoints
+=r($width)
+	@media only screen and (max-width: $width+ "px")
+		@content
+
+=rmin($width)
+	@media only screen and (min-width: $width+ "px")
+		@content
+
+=w1400
+	+r(1400)
+		@content
+
+=w1200
+	+r(1200)
+		@content
+
+=w992
+	+r(992)
+		@content
+
+=w768
+	+r(768)
+		@content
+
+=w576
+	+r(576)
+		@content
